@@ -1,0 +1,743 @@
+html {
+  font-size: 16px;
+  /*scroll-behavior: smooth;*/
+}
+
+:focus {
+    outline-style: none;
+    outline-width: 0 !important;
+    outline-color: none !important;
+}
+
+a {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #1C71D9;
+  text-decoration: none;
+}
+
+input {
+    border-radius: 0;
+}
+
+textarea {
+    border-radius: 0;
+}
+
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+}
+
+p {
+  font-size: 1.125em;
+}
+
+strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125em;
+}
+
+li {
+  font-size: 1.125em;
+}
+
+body {
+  padding-top: 6.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Brygada 1918', serif;
+}
+
+.anchor{
+  display: block;
+  height: 6em;
+  margin-top: -6em;
+  visibility: hidden;
+}
+
+/* Navbar */
+
+.nav-menu {
+  background-color: #FFFFFF;
+}
+
+.navbar-logo {
+  width: 4em;
+  height: auto;
+}
+
+.nav-link {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000000;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #CE1126;
+}
+
+.contact-us-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FCD116;
+  border-radius: 30px;
+  padding: 0.875em 1.5em;
+  transition: 0.4s;
+}
+
+.contact-us-link:hover {
+  color: #FFFFFF;
+  background-color: #CE1126;
+}
+
+/***** First Slide *****/
+
+.hero-bg {
+  width: 100%;
+  height: auto;
+  background-color: #003893;
+  padding-top: 7.5em;
+  padding-bottom: 10em;
+  background-image: url('Img/BG_Main.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-title {
+  font-family: 'Brygada 1918', serif;
+  font-size: 4.0625em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.offer {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.375em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.a-letter-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.a-letter-img {
+  width: 15em;
+  height: auto;
+}
+
+/***** Methodology *****/
+
+.methodology-bg {
+  background-color: #FFFFFF;
+  padding: 4.375em 0;
+}
+
+.section-title {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #CE1126;
+  text-transform: uppercase;
+}
+
+.section-intro-text {
+  font-family: 'Brygada 1918', serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.section-description-text {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.375em;
+  font-weight: 400;
+  color: #000000;
+}
+
+.icon {
+  width: 6.25em;
+  height: auto;
+}
+
+.heading-text {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.375em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.description-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+}
+
+/***** Levels *****/
+
+.levels-bg {
+  width: 100%;
+  height: auto;
+  background-color: #FDEB9B;
+  background-image: url('Img/BG_Yellow.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.375em 0;
+}
+
+.card-wrapper {
+  background-color: #FCE373;
+  padding: 3.125em 2.5em;
+  border-radius: 2.5em;
+}
+
+.level-title {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.red-line {
+  color: #CE1126;
+  border: none;
+  background-color: #CE1126;
+  height: 2px;
+}
+
+.level-description-list {
+  list-style: none;
+  padding: 0;
+  padding-left: 1.25em;
+}
+
+li.level-list-text {
+  list-style-image: url('Icons/RedIcon.svg');
+  padding-bottom: 0.5em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #000000;
+}
+
+/***** *****/
+
+.card-info {
+  width: 100%;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox .level-column {
+  flex: 1;
+  padding: 3.125em 2.5em;
+}
+
+.flexbox .level-column:nth-child(1) {
+  background-color: #FCE373;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.flexbox .level-column:nth-child(2) {
+  background-color: #FCE373;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.flexbox .level-column:nth-child(3) {
+  background-color: #FCE373;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+/***** *****/
+
+/***** Advantages *****/
+
+.advantages-bg {
+  width: 100%;
+  height: auto;
+  background-color: #CE1126;
+  background-image: url('Img/BG_Red.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.375em 0;
+}
+
+.section-title-orange {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #FCD116;
+  text-transform: uppercase;
+}
+
+.section-intro-text-white {
+  font-family: 'Brygada 1918', serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.section-description-text-white {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.375em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.section-description-text-secondary {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 30em;
+  height: auto;
+}
+
+/***** Pricing *****/
+
+.pricing-bg {
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  background-image: url('Img/BG_White.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.375em 0;
+}
+
+.pricing-column {
+  padding: 3.125em 2.5em;
+  border-radius: 2.5em;
+}
+
+.column-one {
+  background-color: #FCE373;
+}
+
+.column-two {
+  background-color: #0056E0;
+}
+
+.column-three {
+  background-color: #E2122B;
+}
+
+.price {
+  display: block;
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.pricing-title-white {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.price-white {
+  display: block;
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+li.pricing-list-text {
+  list-style-image: url('Icons/DarkIcon.svg');
+  padding-bottom: 0.5em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #000000;
+}
+
+li.pricing-list-text-white {
+  list-style-image: url('Icons/WhiteIcon.svg');
+  padding-bottom: 0.5em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.flexbox .pricing-column {
+  flex: 1;
+  padding: 3.125em 2.5em;
+}
+
+.flexbox .pricing-column:nth-child(1) {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.flexbox .pricing-column:nth-child(2) {
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.flexbox .pricing-column:nth-child(3) {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+/***** Sign Up For a Free Lesson *****/
+
+.free-lesson-bg {
+  width: 100%;
+  height: auto;
+  background-color: #003893;
+  background-image: url('Img/BG_Blue.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.375em 0;
+}
+
+.sign-up-input {
+  width: 100%;
+  height: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+  padding: 0.875em 1.5em;
+  background-color: #FFFFFF;
+  border-radius: 1.875em;
+  border: 0;
+}
+
+.button-submit {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FCD116;
+  border: 0;
+  border-radius: 1.875em;
+  padding: 0.875em 1.5em;
+  transition: 0.4s;
+}
+
+.button-submit:hover {
+  color: #FFFFFF;
+  background-color: #CE1126;
+}
+
+/***** Results After Courses *****/
+
+.results-slider {
+  width: 100%;
+}
+
+/***** Student Reviews *****/
+
+.reviews-bg {
+  width: 100%;
+  height: auto;
+  background-color: #F9F9F9;
+  padding: 4.375em 0;
+}
+
+.reviews-slider {
+  width: 100%;
+}
+
+.stars-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.student-name {
+  display: block;
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.375em;
+  font-weight: 700;
+  color: #000000;
+}
+
+/***** Contact Us *****/
+
+.contacts-bg {
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  background-image: url('Img/BG_White_2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.375em 0;
+}
+
+.contact-us-label {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.375em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contact-us-input {
+  width: 100%;
+  height: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+  padding: 0.875em 1.5em;
+  background-color: #EBEBEB;
+  border-radius: 1.875em;
+  border: 0;
+}
+
+.privacy-notification-text {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+}
+
+.link-to-document {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000000;
+  transition: 0.4s;
+}
+
+.link-to-document:hover {
+  color: #CE1126;
+  text-decoration: underline;
+}
+
+/***** Footer *****/
+
+.footer-bg {
+  background-color: #CE1126;
+  padding: 2.5em 0;
+}
+
+.footer-heading {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.contacts-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #FFFFFF;
+  transition: 0.4s;
+}
+
+.contacts-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.contacts-icon {
+  width: 2.5em;
+  height: auto;
+}
+
+.credits {
+  font-family: 'Brygada 1918', serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* Media Queries Containers */
+
+@media (min-width: 576px) {
+  .container-fluid {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-fluid {
+    max-width: 1320px;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+
+  body {
+    padding-top: 5em;
+  }
+
+  .navbar-logo {
+    width: 3em;
+    height: auto;
+  }
+
+  .hero-bg {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .hero-title {
+    font-size: 2.5em;
+  }
+
+  .offer {
+    font-size: 1.25em;
+  }
+
+  .section-title {
+    font-size: 1em;
+  }
+
+  .section-intro-text {
+    font-size: 1.75em;
+  }
+
+  .section-description-text {
+    font-size: 1.25em;
+  }
+
+  .heading-text {
+    font-size: 1.25em;
+  }
+
+  li.level-list-text {
+    font-size: 1em;
+  }
+
+  .section-title-orange {
+    font-size: 1em;
+  }
+
+  .section-intro-text-white {
+    font-size: 1.75em;
+  }
+
+  .section-description-text-white {
+    font-size: 1.25em;
+  }
+
+  .section-description-text-secondary {
+    font-size: 1em;
+  }
+
+  .price {
+    font-size: 1.375em;
+  }
+
+  .pricing-title-white {
+    font-size: 1.375em;
+  }
+
+  .price-white {
+    font-size: 1.375em;
+  }
+
+  li.pricing-list-text {
+    font-size: 1em;
+  }
+
+  li.pricing-list-text-white {
+    font-size: 1em;
+  }
+
+  .sign-up-input {
+    font-size: 0.875em;
+  }
+
+  .student-name {
+    font-size: 1.125em;
+  }
+
+  .contact-us-label {
+    font-size: 1.125em;
+  }
+
+  .contact-us-input {
+    font-size: 0.875em;
+  }
+
+  .privacy-notification-text {
+    font-size: 0.875em;
+  }
+
+  .link-to-document {
+    font-size: 0.875em;
+  }
+
+  .footer-heading {
+    font-size: 1.375em;
+  }
+
+  .contacts-link {
+    font-size: 0.875em;
+  }
+
+  .credits {
+    font-size: 0.875em;
+  }
+
+}
